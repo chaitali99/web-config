@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width:100%;
+            height: auto;
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,90px);
+            gap:30px;
+            grid-template-areas: 
+            "a a a a"
+            "b c d e"
+            "b c d e"
+            "b c d e";
+        }
+        #container>div:nth-child(1)
+        {
+            grid-area: a;
+            background-color: #F7FF00;
+            font-size: 30px;
+        }
+        #container>div:nth-child(2)
+        {
+            grid-area: b;
+            background-color: #FF0000;
+            color:#302f2f;
+            font-size: 20px;
+
+        }
+        #container>div:nth-child(3)
+        {
+            grid-area: c;
+            background-color: #00FF2D;
+            color: #302f2f;
+            font-size: 20px;
+
+        }
+        #container>div:nth-child(4)
+        {
+            grid-area: d;
+            background-color: #5763EE;
+            color: #302e2e;
+            font-size: 20px;
+
+        }
+        #container>div:nth-child(5)
+        {
+            grid-area: e;
+            background-color: #989898;
+            color: #302f2f;
+            font-size: 20px;
+
+        }
+        /* large screen */
+        @media only screen and (min-width: 421px) and (max-width: 780px){
+            #container{
+                grid-template-rows: repeat(5,50px);
+                grid-template-columns: repeat(2,1fr);
+                grid-template-areas: 
+                "a a"
+                "b c"
+                "b c"
+                "d e"
+                "d e";
+            }
+        }
+        /* Small Screen */
+        @media only screen and (min-width: 70px) and (max-width: 420px){
+            #container{
+                grid-template-rows: repeat(5,90px);
+                 grid-template-columns: repeat(1,1fr);
+                grid-template-areas:"a"
+                "b"
+                "c"
+                "d"
+                "e" ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>Navigation</div>
+        <div>Box 1</div>
+        <div>Box 2</div>
+        <div>Box 3</div>
+        <div>Box 4</div>
+    </div>
+</body>
+</html>

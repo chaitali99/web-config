@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin-left: 10px;
+            height:40px;
+            width:140px;
+            border:0px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    
+    var buttonObj=[
+        {textContent:"Primary",color:"white",bgColor:"blue"},
+        {textContent:"Seconday",color:"white",bgColor:"grey"},
+        {textContent:"Success",color:"white",bgColor:"green"},
+        {textContent:"Danger",color:"white",bgColor:"red"},
+        {textContent:"Warning",color:"black",bgColor:"yellow"},
+        {textContent:"Info",color:"white",bgColor:"cyan"},
+        {textContent:"Light",color:"black",bgColor:"white"},
+        {textContent:"Dark",color:"white",bgColor:"black"},
+        {textContent:"Link",color:"blue",bgColor:"white"},
+
+
+    ]
+
+
+
+    // for(var i=0;i<9;i++){
+    //     var btn1=document.createElement("button")
+    //     btn1.textContent="Primary";
+    //     btn1.style.backgroundColor="blue";
+    //     btn1.style.background="white";
+    //     document.
+    // }
+
+    buttonObj.map(function (ele) {
+    var btn1 = document.createElement("button");
+    btn1.textContent = ele.textContent;
+    btn1.style.backgroundColor = ele.bgColor;
+    btn1.style.color = ele.color;
+    document.querySelector("body").append(btn1);
+  });
+
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="Enter value a" id="num1"/>
+    <input type="number" placeholder="Enter value b" id="num2"/>
+    <button id="multi">Find Multiplication</button>
+    <button id="exponent">Click here to find the exponent!</button>
+</body>
+</html>
+<script>
+    var a=document.querySelector("#num1");
+    var b=document.querySelector("#num2");
+    var ans=document.addEventListener("click",multi);
+    function multi(){
+        if(ans=="#multi"){
+        var mul=a*b;
+        mul.document.createElement("h2");
+        document.querySelector("body").append(h2);
+    }else if(ans=="#exponent"){
+        var exp=1;
+        for(var i=0;i<b;i++){
+            exp=exp*a;
+        }
+        exp.document.createElement("h2");
+        document.querySelector("body").append(h2); 
+    }
+
+    }
+    
+</script>
